@@ -3,7 +3,7 @@
 
 import styled from "styled-components";
 
-const Logo = styled.header`
+const StyledHeader = styled.header`
  background-color: #1E3A8A;
  color: white;
  text-align: center;
@@ -43,10 +43,10 @@ const Logo = styled.header`
 
 export default function Header() {
     return (
-    <Logo>
+    <StyledHeader>
         <h1>Flaviane de Lima</h1>
         <p>A tecnologia é uma ponte entre ideias e impactos</p>
-    </Logo>
+    </StyledHeader>
     
     )
 }
