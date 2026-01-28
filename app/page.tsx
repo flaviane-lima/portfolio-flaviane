@@ -1,14 +1,13 @@
 'use client' 
 import Header from "./components/Header"
 import PageWrapper from "./components/PageWrapper"
+import AboutMe from "./components/AboutMe"
 
 export default function Page() {
   return (
     <PageWrapper>
       <Header />
-      <section>
-      <h1>Olá, Seja Bem vindo! Me chamo Flaviane</h1>
-      </section>
+        <AboutMe />
     </PageWrapper>
       
     
