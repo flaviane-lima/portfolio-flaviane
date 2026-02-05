@@ -5,10 +5,12 @@ import styled from "styled-components";
 
 
 const StyledSection = styled.section`
+  background-color: #F9FAFB;
   color: #333333;
-  margin: 2rem auto;
+  margin: 1rem auto 0 auto;
   padding: 2rem;
   max-width: 1000px;        /* limita largura da seção inteira */
+  border-radius: 10px;
 
 `
 
