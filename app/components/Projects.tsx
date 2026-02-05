@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import { Project } from "./types";
 import Card from "./Card";
 
