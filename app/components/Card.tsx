@@ -62,19 +62,21 @@ const TechLabel = styled.p`
 `
 
 const GithubButton = styled.a`
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 16px;
+  display: block;
+  margin-top: 16px;
+  padding: 12px 20px;
   background-color: #1E3A8A;
   color: #fff;
+  text-align: center;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 6px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
   
   &:hover {
   background-color: #1E40AF;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
   
 
