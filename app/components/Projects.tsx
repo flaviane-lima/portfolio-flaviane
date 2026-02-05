@@ -25,7 +25,12 @@ const SectionTitle = styled.h2`
 const ProjectsGrid = styled.div` 
   display: grid; 
   grid-template-columns: repeat(2, 1fr); 
-  gap: 24px; `;
+  gap: 24px; 
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; /* em telas menores, só uma coluna */
+  }
+  `;
 
 // vou criar um array
 const projects: Project[] = [
