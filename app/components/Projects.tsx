@@ -1,25 +1,73 @@
 
 import { Project } from "./types";
 import Card from "./Card";
+import styled from "styled-components";
+
+
+const StyledSection = styled.section`
+  color: #333333;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 1000px;        /* limita largura da seção inteira */
+
+`
+
+const SectionTitle = styled.h2`
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+  color: #333;
+  
+`
+
+const ProjectsGrid = styled.div` 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 24px; `;
 
 // vou criar um array
 const projects: Project[] = [
-    {
+    { 
+        id: 0,
         title: "My Finance",
         image: "/images/myFinance.jpeg",
         description: "Gestão financeira pessoal simples e organizada.",
         technologies: ["Tailwind", "TypeScript", "Next.js", "Prisma ORM", "Docker"],
         status: "Em andamento",
         github: "https://github.com/flaviane-lima/myfinance"
-    }
+    },
+
+    {
+        id: 1,
+        title: "My",
+        image: "/images/myFinance.jpeg",
+        description: "Gestão financeira pessoal simples e organizada.",
+        technologies: ["Tailwind", "TypeScript", "Next.js", "Prisma ORM", "Docker"],
+        status: "Em andamento",
+        github: "https://github.com/flaviane-lima/myfinance"
+    },
+
+    { 
+        id: 2,
+        title: "My",
+        image: "/images/myFinance.jpeg",
+        description: "Gestão financeira pessoal simples e organizada.",
+        technologies: ["Tailwind", "TypeScript", "Next.js", "Prisma ORM", "Docker"],
+        status: "Em andamento",
+        github: "https://github.com/flaviane-lima/myfinance"
+    },
+
+
 ];
 
 export default function () {
     return (
-        <div>
+        <StyledSection>
+            <SectionTitle>Projetos</SectionTitle>
+            <ProjectsGrid>
             {projects.map((project) => (
                 <Card 
-                 key={project.title}
+                 key={project.id}
                  title={project.title}
                  image={project.image}
                  description={project.description}
@@ -28,6 +76,7 @@ export default function () {
                  github={project.github}
                 />
             ))}
-        </div>
+            </ProjectsGrid>
+        </StyledSection>
     )
 }
