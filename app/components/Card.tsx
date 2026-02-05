@@ -97,6 +97,7 @@ export default function Card({ title, image, description, technologies, status, 
           quality={100}
           width={400}
           height={250}
+          loading="eager"
         />
       </ImageWrapper>
       <div>
