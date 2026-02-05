@@ -7,9 +7,13 @@ import styled from "styled-components";
 
 const ProjectCard = styled.div`
   background: #fff;
-  padding: 16px;
+  padding: 24px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+  p {
+    margin-bottom: 8px;
+  }
 `;
 
 
@@ -17,7 +21,7 @@ const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column; 
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   width: 100%;
   
 `
