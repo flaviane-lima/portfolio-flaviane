@@ -22,6 +22,13 @@ const ImageWrapper = styled.div`
   
 `
 
+const ProjectTitle = styled.h3`
+  font-size:1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111827;
+`
+
 const StyledImage = styled(Image)`
     object-fit: cover;
     border-radius: 8px;  
@@ -39,7 +46,7 @@ const GithubButtom = styled.a`
   transition: background-color 0.3s ease;
 
   
-  .button:hover {
+  &:hover {
   background-color: #1E40AF;
 }
   
@@ -51,7 +58,7 @@ export default function Card({ title, image, description, technologies, status, 
   return (
     <ProjectCard>
       <ImageWrapper>
-        <h3>{title}</h3>
+        <ProjectTitle>{title}</ProjectTitle>
         <StyledImage
           src={image}
           alt={title}
