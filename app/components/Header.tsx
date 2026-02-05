@@ -7,16 +7,16 @@ const StyledHeader = styled.header`
  background-color: #1E3A8A;
  color: white;
  text-align: center;
- padding: 2rem 1rem;
+ padding: 4rem 1rem;
 
  h1 {
-   font-size: 1.875rem;
+   font-size: 2.5rem;
    font-weight: bold;
    margin: 0;
 }
    p {
-   font-size: 1rem;
-   margin-top: 0.5rem;
+   font-size: 1.125rem;
+   margin-top: 0.5rem auto 0;
    color: #E0E7FF; /* azul claro para contraste */
    max-width: 600px; /* limita largura para não ficar muito esticado */
 
@@ -45,7 +45,7 @@ export default function Header() {
     return (
     <StyledHeader>
         <h1>Flaviane de Lima</h1>
-        <p>A tecnologia é uma ponte entre ideias e impactos</p>
+        <p>Desenvolvedora Full Stack em formação | Web</p>
     </StyledHeader>
     
     )
