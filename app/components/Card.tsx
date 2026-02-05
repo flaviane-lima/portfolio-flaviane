@@ -10,9 +10,14 @@ const ProjectCard = styled.div`
   padding: 24px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   p {
     margin-bottom: 8px;
+    line-height: 1.5;
+    color: #374151;
   }
 `;
 
@@ -38,9 +43,27 @@ const StyledImage = styled(Image)`
     border-radius: 8px;  
 `
 
-const GithubButtom = styled.a`
+const StatusBadge = styled.span`
+  display: block;
+  padding: 4px 10px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 12px;
+  background-color: #E0E7FF;
+  color: #1E3A8A;
+  margin-bottom: 16px;
+  
+`
+
+const TechLabel = styled.p`
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+`
+
+const GithubButton = styled.a`
   display: inline-block;
-  margin-top: 16px;
+  margin-top: 12px;
   padding: 10px 16px;
   background-color: #1E3A8A;
   color: #fff;
@@ -63,6 +86,7 @@ export default function Card({ title, image, description, technologies, status, 
     <ProjectCard>
       <ImageWrapper>
         <ProjectTitle>{title}</ProjectTitle>
+        <StatusBadge>Status: {status}</StatusBadge>
         <StyledImage
           src={image}
           alt={title}
@@ -73,9 +97,8 @@ export default function Card({ title, image, description, technologies, status, 
       </ImageWrapper>
       <div>
         <p>{description}</p>
-        <p>Tecnologias: {technologies.join(" | ")}</p>
-        <p>Status: {status}</p>
-        <GithubButtom href={github} target="_blank" className="button"> Ver no GitHub</GithubButtom>
+        <TechLabel>Tecnologias: {technologies.join(" | ")}</TechLabel>
+        <GithubButton href={github} target="_blank" > Ver no GitHub</GithubButton>
       </div>
     </ProjectCard>
   );
