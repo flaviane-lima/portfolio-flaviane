@@ -32,9 +32,9 @@ const ImageWrapper = styled.div`
 `
 
 const ProjectTitle = styled.h3`
-  font-size:1.25rem;
-  font-weight: 600;
-  margin-bottom: 8px;
+  font-size:1.5rem;
+  font-weight: 700;
+  margin-bottom: 4px;
   color: #111827;
 `
 
@@ -44,14 +44,14 @@ const StyledImage = styled(Image)`
 `
 
 const StatusBadge = styled.span`
-  display: block;
-  padding: 4px 10px;
-  font-size: 0.875rem;
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.75rem;
   font-weight: 500;
-  border-radius: 12px;
-  background-color: #E0E7FF;
-  color: #1E3A8A;
-  margin-bottom: 16px;
+  border-radius: 8px;
+  background-color: #F3F4F6;
+  color: #374151;
+  margin-bottom: 12px;
   
 `
 
@@ -88,7 +88,9 @@ export default function Card({ title, image, description, technologies, status, 
     <ProjectCard>
       <ImageWrapper>
         <ProjectTitle>{title}</ProjectTitle>
-        <StatusBadge>Status: {status}</StatusBadge>
+        <StatusBadge>
+          Status: {status}
+          </StatusBadge>
         <StyledImage
           src={image}
           alt={title}
