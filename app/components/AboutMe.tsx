@@ -14,7 +14,7 @@ const StyledSection = styled.section`
  h2 {
    font-size:  1.75rem;
    font-weight: bold;
-   margin: 0;
+   margin: 0 0 1rem 0;
 }
 
 p {
@@ -27,31 +27,25 @@ p {
    @media (max-width: 600px) {
     h2 {
       font-size: 1.5rem;
+      
     }
     p {
       font-size: 0.875rem;
     }
   }
 
-  @media (max-width: 400px) {
-    h2 {
-      font-size: 1.25rem;
-    }
-    p {
-      font-size: 0.75rem;
-    }
-  }
 
 `
 
 export default function AboutMe() {
-    return (
-        <StyledSection>
-            <h2>Sobre Mim</h2>
-            <p>
-                Desenvolvedora Full-Stack em formação, em transição de carreira. Ex-empreendedora, aplico minha visão sistêmica e habilidades de liderança no desenvolvimento de aplicações web completas com JavaScript, TypeScript, Next.js, Node.js e Prisma ORM.
-                Busco minha primeira oportunidade como desenvolvedora (Front-end, Back-end ou Full-Stack), onde possa contribuir com minha experiência multidisciplinar e consolidar minha trajetória técnica dentro de um time de tecnologia.
-            </p>
-        </StyledSection>
-    )
+  return (
+    <StyledSection>
+      <h2>Sobre Mim</h2>
+      <p>
+        Desenvolvedora Full Stack em formação, em transição de carreira.
+        Trabalho com JavaScript, TypeScript, Next.js, Node.js e Prisma ORM no desenvolvimento de aplicações web.
+        Busco minha primeira oportunidade como desenvolvedora para crescer tecnicamente e contribuir em um time de tecnologia.
+      </p>
+    </StyledSection>
+  )
 }
