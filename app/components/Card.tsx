@@ -25,9 +25,9 @@ export default function Card({ title, image, description, technologies, status, 
       />
       <div>
         <p>{description}</p>
-        <p>Tecnologias: {technologies}</p>
+        <p>Tecnologias: {technologies.join(" | ")}</p>
         <p>Status: {status}</p>
-        <a href={github} target="_blank" className="button">GitHub:</a>
+        <a href={github} target="_blank" className="button"> Ver no GitHub</a>
       </div>
     </div>
     </section>
