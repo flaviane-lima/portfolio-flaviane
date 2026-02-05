@@ -38,7 +38,7 @@ const projects: Project[] = [
         id: 0,
         title: "My Finance",
         image: "/images/myFinance.jpeg",
-        description: "Gestão financeira pessoal simples e organizada.",
+        description: "Aplicação de gestão financeira pessoal desenvolvida com Next.js, Prisma ORM e Docker, integrando front-end e back-end.",
         technologies: ["Tailwind", "TypeScript", "Next.js", "Prisma ORM", "Docker"],
         status: "Em andamento",
         github: "https://github.com/flaviane-lima/myfinance"
