@@ -45,6 +45,8 @@ const ProjectTitle = styled.h3`
 `
 
 const StyledImage = styled(Image)`
+    width: 100%
+    height:auto;
     object-fit: cover;
     border-radius: 8px;  
 `
