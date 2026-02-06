@@ -31,6 +31,12 @@ const ImageWrapper = styled.div`
   
 `
 
+const CardContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+`
+
 const ProjectTitle = styled.h3`
   font-size:1.5rem;
   font-weight: 700;
@@ -63,7 +69,7 @@ const TechLabel = styled.p`
 
 const GithubButton = styled.a`
   display: block;
-  margin-top: 16px;
+  margin-top: auto;
   padding: 12px 20px;
   background-color: #1E3A8A;
   color: #fff;
@@ -100,11 +106,11 @@ export default function Card({ title, image, description, technologies, status, 
           loading="eager"
         />
       </ImageWrapper>
-      <div>
+      <CardContent>
         <p>{description}</p>
         <TechLabel>Tecnologias: {technologies.join(" | ")}</TechLabel>
         <GithubButton href={github} target="_blank" > Ver no GitHub</GithubButton>
-      </div>
+      </CardContent>
     </ProjectCard>
   );
 }
