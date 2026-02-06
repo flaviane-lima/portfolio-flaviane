@@ -8,10 +8,17 @@ const StyledSection = styled.section`
   background-color: #F9FAFB;
   color: #333333;
   margin: 1rem auto 0 auto;
-  padding: 2rem;
-  max-width: 1000px;        /* limita largura da seção inteira */
   border-radius: 10px;
+  max-width: 1000px;
 
+  /* MOBILE */
+  padding: 1.5rem 1rem;
+
+   /* TABLET / DESKTOP */
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+  
 `
 
 const SectionTitle = styled.h2`
