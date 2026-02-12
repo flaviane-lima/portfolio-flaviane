@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import PageWrapper from "./components/PageWrapper"
 import AboutMe from "./components/AboutMe"
 import Projects from "./components/Projects"
+import Footer from "./components/Footer"
 
 export default function Page() {
   return (
@@ -10,6 +11,7 @@ export default function Page() {
       <Header />
         <AboutMe />
         <Projects />
+        <Footer />
     </PageWrapper>
       
     
