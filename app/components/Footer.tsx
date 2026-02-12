@@ -1,11 +1,19 @@
 'use client'
-
+import styled from "styled-components"
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
+
+const FooterContainer = styled.footer`
+  display: flex;
+  justify-content: center; /* Espaçamento entre os itens */
+  padding: 20px;
+  background-color: #1E3A8A;
+  
+`
 
 //estrutura da função
 export default function Footer () {
     return(
-        <footer>
+        <FooterContainer>
             <a
              href="https://github.com/flaviane-lima"
              target="blanck"
@@ -27,6 +35,6 @@ export default function Footer () {
             >
                 <FaEnvelope size={28} />
             </a>
-        </footer>
+        </FooterContainer>
     )
 }
