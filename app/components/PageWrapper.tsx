@@ -9,12 +9,12 @@ background-color:  #F3F4F6; /* cinza claro */
 min-height: 100vh;
 display: flex;
 flex-direction: column;
-padding-bottom: 80px; /* altura do footer para não encobrir conteúdo */
-
 `
 
 const Content = styled.main`
   flex: 1;
+  padding-bottom: 80px; /* altura do footer para não encobrir conteúdo */
+
 `
 
 export default function PageWrapper({ children }: { children: React.ReactNode}) {
