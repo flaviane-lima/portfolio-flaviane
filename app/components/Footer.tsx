@@ -7,6 +7,11 @@ const FooterContainer = styled.footer`
   justify-content: center; /* Espaçamento entre os itens */
   padding: 20px;
   background-color: #1E3A8A;
+  color: white;
+  position: fixed; /*fixa na tela */
+  bottom: 0;         /* cola no fim da viewport */
+  width: 100%;       /* ocupa toda a largura */
+  height: 80px;      /* altura usada no padding-bottom do Content */
   
 `
 
