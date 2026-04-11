@@ -43,19 +43,19 @@ const ProjectsGrid = styled.div`
 const projects: Project[] = [
     { 
         id: 0,
-        title: "My Finance",
-        image: "/images/myFinance.jpeg",
-        description: "Aplicação de gestão financeira pessoal desenvolvida com Next.js, Prisma ORM e Docker, integrando front-end e back-end.",
-        technologies: ["Tailwind", "TypeScript", "Next.js", "Prisma ORM", "Docker"],
-        status: "Em andamento",
+        title: "Burger Queen API",
+        image: "/images/burgerqueenapi.jpeg",
+        description: "API desenvolvida para autenticação e gerenciamento de usuários, utilizando Node.js, Express e MongoDB.",
+        technologies: ["Node.js", "Express.js", "MongoDB", "Vercel"],
+        status: "Concluído",
         github: "https://github.com/flaviane-lima/myfinance"
     },
 
     {
         id: 1,
-        title: "My",
+        title: "My Finance",
         image: "/images/myFinance.jpeg",
-        description: "Gestão financeira pessoal simples e organizada.",
+        description: "Aplicativo  financeiro, permitindo o registro e gerenciamento de despesas usando Next.js, Typescript",
         technologies: ["Tailwind", "TypeScript", "Next.js", "Prisma ORM", "Docker"],
         status: "Em andamento",
         github: "https://github.com/flaviane-lima/myfinance"
@@ -63,12 +63,42 @@ const projects: Project[] = [
 
     { 
         id: 2,
-        title: "My",
-        image: "/images/myFinance.jpeg",
-        description: "Gestão financeira pessoal simples e organizada.",
-        technologies: ["Tailwind", "TypeScript", "Next.js", "Prisma ORM", "Docker"],
-        status: "Em andamento",
-        github: "https://github.com/flaviane-lima/myfinance"
+        title: "Fleet Management API",
+        image: "/images/fleet.jpg",
+        description: "API desenvolvida para gestão de frota de táxi, permitindo autenticação e gerenciamento de motorista e veículos atravéns de identificadoresnpm run dev.",
+        technologies: ["Node.js", "Express.js", "PostgreSQL", "Prisma ORM"],
+        status: "concluído",
+        github: "https://github.com/flaviane-lima/SAP012-fleet-management-api"
+    },
+
+    { 
+        id: 3,
+        title: "Dataverse Chat",
+        image: "/images/dataverse.jpg",
+        description: "Aplicação web que permite visualizar e explorar dados de personagem de animes, com filtros e estatística.",
+        technologies: ["JavaScript", "HTML", "CSS", "Open AI"],
+        status: "concluído",
+        github: "https://github.com/flaviane-lima/SAP012-dataverse-chat"
+    },
+
+    { 
+        id: 4,
+        title: "Analisador de texto",
+        image: "/images/analisador.jpg",
+        description: "Aplicação web desenvolvida para análise de texto, permitindo ao usuário obter estatística gerais como número de palavras, caracteres e frequência.",
+        technologies: ["JavaScript", "HTML", "CSS"],
+        status: "concluído",
+        github: "https://github.com/flaviane-lima/SAP012-dataverse-chat"
+    },
+
+    { 
+        id: 5,
+        title: "Dataverse-Otakus list",
+        image: "/images/dataverseanime.jpg",
+        description: "Aplicação web desenvolvida em parceria, voltada para trazer informações sobre personagens de animes, permitindo ao usuário filtrar e ordenar os dados.",
+        technologies: ["JavaScript", "HTML", "CSS"],
+        status: "concluído",
+        github: "https://github.com/flaviane-lima/SAP012-dataverse"
     },
 
 
