@@ -81,12 +81,13 @@ const GithubButton = styled.a`
   text-decoration: none;
   font-weight: 600;
   border-radius: 6px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 
   
   &:hover {
   background-color: #1E40AF;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
 }
   
 
