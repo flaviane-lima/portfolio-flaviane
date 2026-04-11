@@ -17,7 +17,7 @@ const ProjectCard = styled.div`
 
   p {
     margin-bottom: 8px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #374151;
   }
 `;
@@ -47,8 +47,9 @@ const ProjectTitle = styled.h3`
 
 const StyledImage = styled(Image)`
     width: 100%;
-    height:150px;
+    height:160px;
     object-fit: cover;
+    object-position: top center;
     border-radius: 8px;  
     `
 
