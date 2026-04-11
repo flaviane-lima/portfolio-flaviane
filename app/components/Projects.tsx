@@ -10,14 +10,16 @@ const StyledSection = styled.section`
   margin: 1rem auto 0 auto;
   border-radius: 10px;
   max-width: 1000px;
-
-  /* MOBILE */
   padding: 1.5rem 1rem;
 
+
    /* TABLET / DESKTOP */
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     padding: 2rem;
+
   }
+
+
   
 `
 
@@ -37,6 +39,8 @@ const ProjectsGrid = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr; /* em telas menores, só uma coluna */
   }
+
+
   `;
 
 // vou criar um array
