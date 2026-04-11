@@ -13,6 +13,7 @@ const ProjectCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 500px;
 
   p {
     margin-bottom: 8px;
@@ -24,10 +25,10 @@ const ProjectCard = styled.div`
 
 const ImageWrapper = styled.div`
   display: flex;
-  justify-content: center;
   flex-direction: column; 
   margin-bottom: 20px;
   width: 100%;
+  gap: 8px;
   
 `
 
@@ -45,8 +46,8 @@ const ProjectTitle = styled.h3`
 `
 
 const StyledImage = styled(Image)`
-    width: 100%
-    height:auto;
+    width: 100%;
+    height:150px;
     object-fit: cover;
     border-radius: 8px;  
     `
